@@ -1,0 +1,65 @@
+**************************************************************************************************************************************************************************
+*                                                                                   RAPPORT                                                                              *
+**************************************************************************************************************************************************************************
+ Partie 1:
+=>le plus grand et le plus petit âge des citoyens dans la base de données:
+    Âge Maximum: 045
+    Âge Minimum: 015
+=>récupère le nombre de citoyens dans chaque tranche d'âge et les affiche
+Age Counts: 
+Age 015: 018
+Age 016: 018
+Age 017: 018
+Age 018: 013
+Age 019: 028
+Age 020: 019
+Age 021: 011
+Age 022: 015
+Age 023: 016
+Age 024: 015
+Age 025: 016
+Age 026: 018
+Age 027: 017
+Age 028: 016
+Age 029: 013
+Age 030: 012
+Age 031: 016
+Age 032: 015
+Age 033: 018
+Age 034: 018
+Age 035: 014
+Age 036: 013
+Age 037: 022
+Age 038: 010
+Age 039: 018
+Age 040: 016
+Age 041: 015
+Age 042: 017
+Age 043: 012
+Age 044: 017
+Age 045: 014
+Parti 2:
+=> Les codes pays sont mis à jour pour les citoyens dont l'âge est compris entre 35 et 40 ans.
+
+0237efa4-1935-49d4-ba71-f83f7ee68187 | Leonid       | Lurner        | llurner5j-at-rediff.com              | Male        |  37 | MALAGASY                  | FRANCE      | BE           | QMobile Noir A550
+ 8bf01882-d1e7-445c-8435-4945b9c61742 | Alissa       | Oldham        | aoldham5l-at-cloudflare.com          | Female      |  37 | HIRI MOTU                 | FRANCE      | BE           | Samsung Gear Sport
+ 55c4e042-1d69-4379-877f-2f610926811d | Sollie       | Luce          | sluce5m-at-1688.com                  | Male        |  36 | ARABIC                    | FRANCE      | BE           | Allview Soul X5 Pro
+ b65a098f-4c70-4f83-af80-9f3c5aed354b | Maisey       | Widd          | mwidd61-at-google.nl                 | Female      |  39 | TOK PISIN                 | FRANCE      | BE           | Sony Xperia L
+ b2cf2a1d-6edf-4eb0-8ede-beb27ff68701 | Winslow      | Mostin        | wmostin9p-at-epa.gov                 | Male        |  37 | MAORI                     | FRANCE      | BE           | Sewon SGD-101
+ d5ffb401-134f-4e26-b581-353dddc3ba62 | Cindie       | Yurygyn       | cyurygyn64-at-wufoo.com              | Female      |  38 | ARABIC                    | FRANCE      | BE           | Micromax Canvas Infinity Life
+ 8ce4034a-f749-484c-829c-c0ddbac602a9 | Steven       | Harriman      | sharriman6h-at-ycombinator.com       | Male        |  39 | THAI                      | FRANCE      | BE           | Google Pixel C
+ 9dce3e4a-c91c-45de-8422-b132a559ba45 | Florella     | Strand        | fstrand2m-at-aol.com                 | Female      |  36 | ASSAMESE                  | FRANCE      | BE           | Samsung Galaxy Tab 4 10.1 3G
+ d3e84d6e-68b0-4c12-b22a-bfb35dfb1c71 | Layton       | Ashlee        | lashlee2o-at-abc.net.au              | Male        |  39 | YIDDISH                   | FRANCE      | BE           | Samsung A887 Solstice
+ f9e51a79-5d48-4975-93b5-ee8fdd1bde57 | Wilmar       | Cottisford    | wcottisford6u-at-vistaprint.com      | Male        |  36 | BELARUSIAN                | FRANCE      | BE           | Samsung S3310
+ 7676d4b7-dd7a-4681-a576-a57a7850b59b | Estella      | Trevain       | etrevain6b-at-census.gov             | Polygender  |  38 | SPANISH                   | SWITZERLAND | BE           | Huawei U8180 IDEOS X1
+ ff1dec09-31a4-419b-a8ec-0c67737a969c | Liuka        | Puig          | lpuig72-at-linkedin.com              | Female      |  39 | KYRGYZ                    | FRANCE      | BE           | LG Optimus L4 II Tri E470
+...
+
+=> Les codes pays sont corrigés pour les citoyens belges (passant de "Belgium" à "BE") et français (passant de "France" à "FR").
+
+
+=> Les valeurs des colonnes "country" et "spoken" sont mises en majuscule dans la base de données.
+
+**************************************************************************************************************************************************************************
+*                                                                                   FIN DU RAPPORT                                                                       *
+**************************************************************************************************************************************************************************
