@@ -23,7 +23,7 @@ Copier le code
 cd chemin/vers/le/projet
 
 # Exécutez le script principal
-cobc -x -free votre_programme_principal.cob
+cobc -x -free gener.cbl
 Fonctionnalités
 Le générateur propose les fonctionnalités suivantes, réparties en plusieurs modules :
 
