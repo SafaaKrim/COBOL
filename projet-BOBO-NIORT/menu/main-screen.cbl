@@ -37,7 +37,7 @@
                FOREGROUND-COLOR IS 2.        
       ******************************************************************
        PROCEDURE DIVISION.
-       0000-MAIN-LOGIC.
+      MAIN-LOGIC.
       *---------------------------------------------------------------
       * Gestion principale du logic du menu. Affiche le menu principal,
       * accepte le choix de l'utilisateur et dirige vers la 
