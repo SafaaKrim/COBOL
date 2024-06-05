@@ -42,7 +42,9 @@
                  WHEN USER-CHOICE = "3" PERFORM GESTION-REMBOURSEMENTS
                  WHEN USER-CHOICE = "4" PERFORM GESTION-PRESTATIONS
                  WHEN USER-CHOICE = "5" PERFORM GENERATE-REPORTS
-                 WHEN USER-CHOICE = "Q" STOP RUN
+                 WHEN USER-CHOICE = "Q" 
+            
+              STOP RUN
                  WHEN OTHER    DISPLAY "CHOIX INVALIDE, ESSAYEZ ENCORE."
             END-EVALUATE.
        
