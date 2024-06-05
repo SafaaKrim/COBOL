@@ -24,7 +24,7 @@
            FOREGROUND-COLOR IS 2.
            05 LINE 20  COL 89 VALUE "4. Gestion des prestations"
            FOREGROUND-COLOR IS 2.
-           05 LINE 22  COL 89 VALUE "5. Génération de rapports"
+           05 LINE 22  COL 89 VALUE "5. Generation de rapports"
            FOREGROUND-COLOR IS 2.
            05 LINE 24  COL 89 VALUE "Q. Quitter l'application"
            FOREGROUND-COLOR IS 2.
