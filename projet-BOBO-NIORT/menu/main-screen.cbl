@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. main-screen.
-       AUTHOR. safaa.
+       AUTHOR.safaa.
 
       ******************************************************************
        ENVIRONMENT DIVISION.
@@ -15,37 +15,59 @@
        01  SC-MENU-RETURN     PIC X(01).       
       ******************************************************************
        SCREEN SECTION.
+       
       *Inclusion des définitions de l'écran depuis un fichier externe.
-       COPY '33.cpy'.                          
+       
 
        01 MAIN-MENU-SCREEN.
-      *Nettoyage de l'écran avant l'affichage du menu. 
-           05 BLANK SCREEN.                 
-           05 LINE 14 COL 89 VALUE "1. Gestion des adherents"
-               FOREGROUND-COLOR IS 2.         
-           05 LINE 16 COL 89 VALUE "2. Gestion des cotisations"
-               FOREGROUND-COLOR IS 2.         
-           05 LINE 18 COL 89 VALUE "3. Gestion des remboursements"
-               FOREGROUND-COLOR IS 2.        
-           05 LINE 20 COL 89 VALUE "4. Gestion des prestations"
-               FOREGROUND-COLOR IS 2.         
-           05 LINE 22 COL 89 VALUE "5. Generation de rapports"
-               FOREGROUND-COLOR IS 2.         
-           05 LINE 24 COL 89 VALUE "Q. Quitter l'application"
-               FOREGROUND-COLOR IS 2.        
-           05 LINE 26 COL 89 VALUE "Veuillez choisir une option:"
-               FOREGROUND-COLOR IS 2.        
+
+           05 BLANK SCREEN BACKGROUND-COLOR IS 0.
+
+           COPY '33.cpy'.
+
+           05 LINE 12 COLUMN 89 VALUE "1. Gestion des adherents"
+               FOREGROUND-COLOR IS 2
+               HIGHLIGHT.
+       
+           05 LINE 14 COL 89 VALUE "2. Gestion des cotisations"
+               FOREGROUND-COLOR IS 2
+               HIGHLIGHT.
+           05 LINE 16 COL 89 VALUE "3. Gestion des remboursements"
+               FOREGROUND-COLOR IS 2
+               HIGHLIGHT.
+               
+       
+           05 LINE 18 COL 89 VALUE "4. Gestion des prestations"
+               FOREGROUND-COLOR IS 2
+               HIGHLIGHT. 
+       
+           05 LINE 20 COL 89 VALUE "5. Generation de rapports"
+               FOREGROUND-COLOR IS 2
+               HIGHLIGHT.
+               
+           05 LINE 22 COL 89 VALUE "Q. Quitter l'application"
+               FOREGROUND-COLOR IS 2
+               HIGHLIGHT.
+       
+           05 LINE 24 COL 89 VALUE "Veuillez choisir une option:"
+               FOREGROUND-COLOR IS 2
+               HIGHLIGHT
+               UNDERLINE.
+           05 LINE 24 COL 118 PIC X(01) TO USER-CHOICE 
+            FOREGROUND-COLOR 7.
+       
       ******************************************************************
        PROCEDURE DIVISION.
-      MAIN-LOGIC.
+       MAIN-LOGIC.
       *---------------------------------------------------------------
       * Gestion principale du logic du menu. Affiche le menu principal,
       * accepte le choix de l'utilisateur et dirige vers la 
       *routine appropriée.
       *---------------------------------------------------------------
-           DISPLAY MAIN-MENU-SCREEN.
-           DISPLAY SCREEN-FRAME.
+           ACCEPT MAIN-MENU-SCREEN.
+           
            ACCEPT USER-CHOICE.
+           MOVE FUNCTION UPPER-CASE(USER-CHOICE) TO USER-CHOICE.
             EVALUATE TRUE
                  WHEN USER-CHOICE = "1" 
                      PERFORM 1000-GESTION-ADHERENTS
